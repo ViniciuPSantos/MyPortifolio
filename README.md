@@ -11,7 +11,7 @@ Este projeto foi desenvolvido com foco em **fluidez, design moderno e performanc
 
 > *Demonstração do site completo — com transições suaves, seção de contato funcional e layout responsivo.*
 
-🔗 **Acesse online:** [https://vinicius-santos-portfolio.vercel.app](https://zvini-portfolio.vercel.app)
+🔗 **Acesse online:** [https://vinicius-santos-portfolio.vercel.app](https://vinicius-santos-portfolio.vercel.app)
 
 ---
 

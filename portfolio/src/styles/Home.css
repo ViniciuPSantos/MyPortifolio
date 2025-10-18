@@ -11,6 +11,12 @@
   border-bottom: 1px solid rgba(156, 188, 221, 0.15); /* separação sutil */
 }
 
+@media (max-width: 768px){
+  .home-section{
+    margin-top: 80px;
+  }
+}
+
 .hero-content {
   max-width: 700px;
   display: flex;

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import img1 from '../assets/imagens/hzc.png';
 import img2 from '../assets/imagens/portfolio.png';
+import img3 from '../assets/imagens/bazar.png';
 import '../styles/Portfolio.css';
 
 const projects = [
@@ -9,7 +10,7 @@ const projects = [
         id: 1,
         title: "ConectaBazares",
         description: "A plataform in Java and JFramex that connects small businesses to customers.",
-        image: "/images/bazar.png",
+        image: img3,
         demo: "#",
         code: "https://github.com/ViniciuPSantos/ProjetoA3"
     },

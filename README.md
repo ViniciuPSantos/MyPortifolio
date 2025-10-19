@@ -62,7 +62,7 @@ Este projeto foi desenvolvido com foco em **fluidez, design moderno e performanc
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/zvini7/portfolio.git
+git clone https://github.com/ViniciuPSantos/MyPortfolio
 
 # Entrar na pasta do projeto
 cd portfolio

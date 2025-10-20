@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import img1 from '../assets/imagens/hzc.png';
-import img2 from '../assets/imagens/portfolio.png';
+import img2 from '../assets/imagens/landingpage.png';
 import img3 from '../assets/imagens/bazar.png';
 import '../styles/Portfolio.css';
 
@@ -17,11 +17,11 @@ const projects = [
 
     {
         id: 2,
-        title: "Portfolio Website",
-        description: "A personal portfolio website built with React and Framer Motion.",
+        title: "Landing Page",
+        description: "A personal landing page website built with React and Framer Motion.",
         image: img2,
-        demo: "#",
-        code: "https://github.com/ViniciuPSantos/MyPortifolio"
+        demo: "https://vinicius-landing.vercel.app",
+        code: "https://github.com/ViniciuPSantos/Vinicius-Landing"
     },
 
     {

@@ -1,5 +1,5 @@
 .home-section {
-  background: linear-gradient(180deg, #04080c 0%, #070d14 100%);
+  background: radial-gradient(circle at bottom, rgba(63, 127, 191, 0.15), transparent 70%), #04080c;
   color: white;
   height: 100vh;
   display: flex;
@@ -31,7 +31,7 @@
   font-weight: 700;
   line-height: 1.3;
   color: #ffffff;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Space Groteks', sans-serif;
 }
 
 .highlight {

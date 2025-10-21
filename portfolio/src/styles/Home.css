@@ -1,5 +1,5 @@
 .home-section {
-  background: radial-gradient(circle at bottom, rgba(63, 127, 191, 0.15), transparent 70%), #04080c;
+  background: radial-gradient(circle at center, rgba(63, 127, 191, 0.15), transparent 70%), #04080c;
   color: white;
   height: 100vh;
   display: flex;

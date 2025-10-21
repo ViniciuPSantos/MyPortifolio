@@ -1,6 +1,6 @@
 .portfolio-section {
     padding: 100px 10%;
-    background-color: #04080c;
+    background: radial-gradient(circle at center, rgba(63, 127, 191, 0.15), transparent 70%), #04080c;
     color: #fff;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

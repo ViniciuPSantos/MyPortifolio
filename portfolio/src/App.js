@@ -4,6 +4,7 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Portfolio from "./sections/Portfolio";
+import TechStack from "./sections/TechStack";
 import { Toaster } from "react-hot-toast";
 
 import "./index.css";
@@ -14,6 +15,7 @@ function App(){
         <NavBar />
         <Home />
         <About />
+        <TechStack/>
         <Portfolio />
         <Contact />
         <Toaster position="bottom-center" reverseOrder={false} />

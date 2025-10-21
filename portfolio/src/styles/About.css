@@ -1,6 +1,6 @@
 .about-section{
     padding: 100px 10px;
-    background: radial-gradient(circle at top, rgba(63, 127, 191, 0.15), transparent 70%), #04080c;
+    background: radial-gradient(circle at center, rgba(63, 127, 191, 0.15), transparent 70%), #04080c;
     color: #FFFFFF;
     display: flex;
     align-items: center;

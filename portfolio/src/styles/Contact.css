@@ -1,5 +1,5 @@
 .contact-section{
-    background: linear-gradient(180deg, #04080c 0%, #0a1320 100%);
+    background: radial-gradient(circle at center, rgba(63, 127, 191, 0.15), transparent 70%), #04080c;;
     color: #ffffff;
     padding: 100px 10%;
     display: flex;

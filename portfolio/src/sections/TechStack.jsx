@@ -9,11 +9,11 @@ import {
     SiMysql,
     SiGit,
     SiTypescript,
-    SiPHP,
     SiSpringboot,
     SiPython,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
+import { FaPHP } from 'react-icons'
 import '../styles/TechStack.css';
 
 const techGroups = [
@@ -29,7 +29,7 @@ const techGroups = [
         { name: "Java", icon: <FaJava color="#f89820" /> },
         { name: "Git", icon: <SiGit color="#F05032" /> },
         { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
-        { name: "PHP", icon: <SiPHP color="#777BB4" /> },
+        { name: "PHP", icon: <FaPHP color="#777BB4" /> },
         { name: "Spring Boot", icon: <SiSpringboot color="#6DB33F" /> },
         { name: "Python", icon: <SiPython color="#3776AB" /> },
     ]

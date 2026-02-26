@@ -9,7 +9,7 @@ import {
     SiMysql,
     SiGit,
     SiTypescript,
-    SiTailwindcss,
+    SiPHP,
     SiSpringboot,
     SiPython,
 } from 'react-icons/si';
@@ -29,7 +29,7 @@ const techGroups = [
         { name: "Java", icon: <FaJava color="#f89820" /> },
         { name: "Git", icon: <SiGit color="#F05032" /> },
         { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
-        { name: "TailwindCSS", icon: <SiTailwindcss color="#38BDF8" /> },
+        { name: "PHP", icon: <SiPHP color="#777BB4" /> },
         { name: "Spring Boot", icon: <SiSpringboot color="#6DB33F" /> },
         { name: "Python", icon: <SiPython color="#3776AB" /> },
     ]

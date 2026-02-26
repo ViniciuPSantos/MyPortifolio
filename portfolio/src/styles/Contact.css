@@ -60,3 +60,7 @@
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(63, 127, 191, 0.4);
 }
+
+.contact-description{
+    padding-bottom: 10px;
+}

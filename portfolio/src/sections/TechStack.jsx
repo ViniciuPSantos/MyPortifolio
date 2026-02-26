@@ -13,7 +13,7 @@ import {
     SiPython,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
-import { FaPHP } from 'react-icons'
+import { FaPHP } from 'react-icons/fa';
 import '../styles/TechStack.css';
 
 const techGroups = [

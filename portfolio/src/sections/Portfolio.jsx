@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img1 from '../assets/imagens/hzc.png';
+import img1 from '../assets/imagens/SceneStack.png';
 import img2 from '../assets/imagens/LandPage.png';
-import img3 from '../assets/imagens/SceneStack.png';
+import img3 from '../assets/imagens/TelaInicial.png';
 import '../styles/Portfolio.css';
 
 const projects = [

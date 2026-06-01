@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import img1 from '../assets/imagens/hzc.png';
-import img2 from '../assets/imagens/landingpage.png';
-import img3 from '../assets/imagens/TelaInicial.png';
+import img2 from '../assets/imagens/LandPage.png';
+import img3 from '../assets/imagens/SceneStack.png';
 import '../styles/Portfolio.css';
 
 const projects = [
@@ -17,20 +17,20 @@ const projects = [
 
     {
         id: 2,
-        title: "Landing Page",
-        description: "A personal landing page website built with React and Framer Motion.",
+        title: "Finwise",
+        description: "A personal finance platform built with React, TypeScript, and Spring Boot.",
         image: img2,
-        demo: "https://vinicius-landing.vercel.app",
-        code: "https://github.com/ViniciuPSantos/Vinicius-Landing"
+        demo: "https://finwise-five-livid.vercel.app/",
+        code: "https://github.com/ViniciuPSantos/Finwise"
     },
 
     {
         id: 3,
-        title: "HZC Website",
-        description: "A website for HZC company built with HTML, CSS, and JavaScript.",
+        title: "SceneStack",
+        description: "A REST API built with Java and Spring Boot for searching movies and series via the OMDb API.",
         image: img1,
-        demo: "https://viniciupsantos.github.io/HZC-site-alura",
-        code: "https://github.com/ViniciuPSantos/HZC-site-alura"
+        demo: "https://scene-stack-front.vercel.app/",
+        code: "https://github.com/ViniciuPSantos/SceneStack-API"
     }
 ];
 

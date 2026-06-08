@@ -115,3 +115,21 @@
     background: #3f7fbf;
     color: #04080c;
 }
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 16px;
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #9bbcdd;
+  background: rgba(63, 127, 191, 0.12);
+  border: 1px solid rgba(63, 127, 191, 0.4);
+  border-radius: 6px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}

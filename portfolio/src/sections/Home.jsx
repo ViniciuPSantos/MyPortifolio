@@ -8,7 +8,6 @@ import "../styles/Home.css";
 const Home = () => {
   const { t } = useLang();
 
-  // monta a sequência do TypeAnimation a partir das roles traduzidas
   const sequence = t.hero.roles.flatMap((role) => [role, 2000]);
 
   return (
@@ -23,7 +22,7 @@ const Home = () => {
           {t.hero.intro}{" "}
           <span className="highlight">
             <TypeAnimation
-              key={sequence.join()} // força reset ao trocar idioma
+              key={sequence.join()} 
               sequence={sequence}
               wrapper="span"
               speed={50}

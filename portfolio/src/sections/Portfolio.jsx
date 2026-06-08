@@ -13,7 +13,7 @@ const projects = [
     title: "EcoBazar",
     image: img3,
     demo: "#",
-    code: "https://github.com/ViniciuPSantos/ProjetoA3_2026_v1",
+    code: "https://github.com/ViniciuPSantos/EcoBazar",
     tags: ["Java", "Swing", "MySQL", "JDBC"],
   },
   {

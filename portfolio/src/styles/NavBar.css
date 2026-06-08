@@ -20,7 +20,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* wrapper que agrupa links + ações */
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -91,14 +91,14 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contact-btn:hover {
-  transform: scale(1.05); /* corrigido: era 1.05s (invalido) */
+  transform: scale(1.05); 
 }
 .contact-btn a {
   color: #04080c;
   text-decoration: none;
 }
 
-/* hamburguer - escondido no desktop */
+
 .menu-toggle {
   display: none;
   background: transparent;

@@ -1,63 +1,54 @@
-import React, {useState, useEffect} from "react";
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
-    SiHtml5,
-    SiCss3,
-    SiJavascript,
-    SiReact,
-    SiNodedotjs,
-    SiMysql,
-    SiGit,
-    SiTypescript,
-    SiSpringboot,
-    SiPython,
-} from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
-import { FaPhp } from 'react-icons/fa';
-import '../styles/TechStack.css';
+  SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, SiMysql,
+  SiGit, SiTypescript, SiSpringboot, SiDocker, SiSwagger,
+} from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { useLang } from "../context/LanguageContext";
+import "../styles/TechStack.css";
 
 const techGroups = [
-    [
-        { name: "HTML5", icon: <SiHtml5 color="#E34F26" /> },
-        { name: "CSS3", icon: <SiCss3 color="#1572B6" /> },
-        { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
-        { name: "React", icon: <SiReact color="#61DAFB" /> },
-        { name: "Node.js", icon: <SiNodedotjs color="#83CD29" /> },
-        { name: "MySQL", icon: <SiMysql color="#00618A" /> },
-    ],
-    [
-        { name: "Java", icon: <FaJava color="#f89820" /> },
-        { name: "Git", icon: <SiGit color="#F05032" /> },
-        { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
-        { name: "PHP", icon: <FaPhp color="#777BB4" /> },
-        { name: "Spring Boot", icon: <SiSpringboot color="#6DB33F" /> },
-        { name: "Python", icon: <SiPython color="#3776AB" /> },
-    ]
+  [
+    { name: "Java", icon: <FaJava color="#f89820" /> },
+    { name: "Spring Boot", icon: <SiSpringboot color="#6DB33F" /> },
+    { name: "MySQL", icon: <SiMysql color="#00618A" /> },
+    { name: "Docker", icon: <SiDocker color="#2496ED" /> },
+    { name: "Swagger / OpenAPI", icon: <SiSwagger color="#85EA2D" /> },
+    { name: "Git", icon: <SiGit color="#F05032" /> },
+  ],
+  [
+    { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
+    { name: "React", icon: <SiReact color="#61DAFB" /> },
+    { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+    { name: "Node.js", icon: <SiNodedotjs color="#83CD29" /> },
+    { name: "HTML5", icon: <SiHtml5 color="#E34F26" /> },
+    { name: "CSS3", icon: <SiCss3 color="#1572B6" /> },
+  ],
 ];
 
 const TechStack = () => {
-    const [index, setIndex] = useState(0);
+  const { t } = useLang();
+  const [index, setIndex] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setIndex((prev) => (prev + 1) % techGroups.length);
-        }, 5000);
-        return () => clearInterval(interval);
-    }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % techGroups.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
-    return(
-        <section className="tech-section" id="stack">
+  return (
+    <section className="tech-section" id="stack">
       <motion.h2
         className="tech-title"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        My <span>Tech Stack</span>
+        {t.stack.title} <span>{t.stack.titleHighlight}</span>
       </motion.h2>
-
-      <p className="tech-subtitle">Technologies and tools I work with daily</p>
-
+      <p className="tech-subtitle">{t.stack.subtitle}</p>
       <div className="tech-grid-container">
         <AnimatePresence mode="wait">
           <motion.div
@@ -83,7 +74,6 @@ const TechStack = () => {
         </AnimatePresence>
       </div>
     </section>
-    )
-}
-
+  );
+};
 export default TechStack;

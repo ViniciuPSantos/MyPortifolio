@@ -1,12 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { TypeAnimation} from "react-type-animation";
+import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-scroll";
+import { useLang } from "../context/LanguageContext";
 import "../styles/Home.css";
 
 const Home = () => {
+  const { t } = useLang();
+
+  // monta a sequência do TypeAnimation a partir das roles traduzidas
+  const sequence = t.hero.roles.flatMap((role) => [role, 2000]);
+
   return (
-    <section id="home" className="home-section  hero-bg">
+    <section id="home" className="home-section hero-bg">
       <motion.div
         className="hero-content"
         initial={{ opacity: 0, y: 40 }}
@@ -14,16 +20,25 @@ const Home = () => {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <h1 className="hero-title">
-          I’m a <span className="highlight"><TypeAnimation sequence={["Full Stack Developer", 2000, "Software Engineer", 2000, "Web Creator", 2000,]} wrapper="span" speed={50} repeat={Infinity} /></span>
+          {t.hero.intro}{" "}
+          <span className="highlight">
+            <TypeAnimation
+              key={sequence.join()} // força reset ao trocar idioma
+              sequence={sequence}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </span>
         </h1>
-        <p className="hero-subtitle">
-          Crafting responsive and efficient web experiences using React, Node.js,
-          Java and more! Focused on clean code and scalable design.
-        </p>
-        <button className="primary-btn"><Link to="portfolio">Previous Projects</Link></button>
+        <p className="hero-subtitle">{t.hero.subtitle}</p>
+        <button className="primary-btn">
+          <Link to="portfolio" smooth={true} duration={500}>
+            {t.hero.cta}
+          </Link>
+        </button>
       </motion.div>
     </section>
   );
 };
-
 export default Home;

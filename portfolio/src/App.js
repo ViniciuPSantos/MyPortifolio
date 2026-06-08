@@ -6,21 +6,20 @@ import Contact from "./sections/Contact";
 import Portfolio from "./sections/Portfolio";
 import TechStack from "./sections/TechStack";
 import { Toaster } from "react-hot-toast";
-
+import { LanguageProvider } from "./context/LanguageContext";
 import "./index.css";
 
-function App(){
-    return(
-        <>
-        <NavBar />
-        <Home />
-        <About />
-        <TechStack/>
-        <Portfolio />
-        <Contact />
-        <Toaster position="bottom-center" reverseOrder={false} />
-        </>
-    )
+function App() {
+  return (
+    <LanguageProvider>
+      <NavBar />
+      <Home />
+      <About />
+      <TechStack />
+      <Portfolio />
+      <Contact />
+      <Toaster position="bottom-center" reverseOrder={false} />
+    </LanguageProvider>
+  );
 }
-
 export default App;

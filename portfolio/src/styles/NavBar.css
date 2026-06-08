@@ -69,3 +69,37 @@
 .contact-btn:hover{
     transform: scale(1.05s);
 }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-social {
+  color: #9bbcdd;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.nav-social:hover {
+  color: #3f7fbf;
+  transform: translateY(-2px);
+}
+
+.lang-toggle {
+  background: transparent;
+  border: 1px solid #3f7fbf;
+  color: #9bbcdd;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.lang-toggle:hover {
+  background: #3f7fbf;
+  color: #fff;
+}

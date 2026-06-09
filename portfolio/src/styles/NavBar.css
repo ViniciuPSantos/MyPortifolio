@@ -11,7 +11,6 @@
   align-items: center;
   z-index: 100;
 }
-
 .logo {
   color: #3f7fbf;
   font-weight: 700;
@@ -19,14 +18,11 @@
   letter-spacing: 1px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 .nav-menu {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-
 .nav-links {
   display: flex;
   gap: 30px;
@@ -45,7 +41,6 @@
 .nav-links a:hover {
   color: #ffffff;
 }
-
 .nav-actions {
   display: flex;
   align-items: center;
@@ -62,7 +57,6 @@
   color: #3f7fbf;
   transform: translateY(-2px);
 }
-
 .lang-toggle {
   background: transparent;
   border: 1px solid #3f7fbf;
@@ -78,7 +72,6 @@
   background: #3f7fbf;
   color: #fff;
 }
-
 .contact-btn {
   background: linear-gradient(90deg, #3f7fbf, #9bbcdd);
   color: #04080c;
@@ -91,14 +84,19 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contact-btn:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 .contact-btn a {
   color: #04080c;
   text-decoration: none;
 }
 
-
+/* bloco de acoes do mobile (toggle + hamburguer) - escondido no desktop */
+.mobile-actions {
+  display: none;
+  align-items: center;
+  gap: 14px;
+}
 .menu-toggle {
   display: none;
   background: transparent;
@@ -111,8 +109,16 @@
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
+  .mobile-actions {
+    display: flex;
+  }
   .menu-toggle {
     display: block;
+  }
+
+  /* esconde o toggle de dentro do menu pra nao duplicar */
+  .lang-toggle-desktop {
+    display: none;
   }
 
   .nav-menu {

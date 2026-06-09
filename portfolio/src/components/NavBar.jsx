@@ -7,21 +7,25 @@ import "../styles/NavBar.css";
 const NavBar = () => {
   const { t, lang, toggleLang } = useLang();
   const [menuOpen, setMenuOpen] = useState(false);
-
   const closeMenu = () => setMenuOpen(false);
 
   return (
     <nav className="navbar">
       <div className="logo">VS</div>
 
-      <button
-        className="menu-toggle"
-        onClick={() => setMenuOpen((prev) => !prev)}
-        aria-label="Menu"
-        aria-expanded={menuOpen}
-      >
-        {menuOpen ? <FaTimes /> : <FaBars />}
-      </button>
+      <div className="mobile-actions">
+        <button className="lang-toggle" onClick={toggleLang} aria-label="Trocar idioma">
+          {lang === "pt" ? "EN" : "PT"}
+        </button>
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Menu"
+          aria-expanded={menuOpen}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
 
       <div className={`nav-menu ${menuOpen ? "open" : ""}`}>
         <ul className="nav-links">
@@ -31,6 +35,7 @@ const NavBar = () => {
         </ul>
 
         <div className="nav-actions">
+          
           <a
             href="https://www.linkedin.com/in/vinicius-de-paula-santos-dev"
             target="_blank"
@@ -39,6 +44,7 @@ const NavBar = () => {
             aria-label="LinkedIn">
             <FaLinkedin />
           </a>
+
           
           <a
             href="https://github.com/ViniciuPSantos"
@@ -49,7 +55,7 @@ const NavBar = () => {
             <FaGithub />
           </a>
 
-          <button className="lang-toggle" onClick={toggleLang} aria-label="Trocar idioma">
+          <button className="lang-toggle lang-toggle-desktop" onClick={toggleLang} aria-label="Trocar idioma">
             {lang === "pt" ? "EN" : "PT"}
           </button>
 
